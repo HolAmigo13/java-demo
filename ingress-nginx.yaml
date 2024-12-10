@@ -5,9 +5,15 @@ metadata:
   namespace: java-demo
   annotations:
     kubernetes.io/ingress.class: "nginx"
+    #kubernetes.io/tls-acme: "true"
+    cert-manager.io/cluster-issuer: "encrypt-prod"  # Specifies the ClusterIssuer to use for TLS certificates
     nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
 spec:
+  tls:
+  - hosts:
+    - java-demo.devops.com  # Your domain name for the app
+    secretName: java-demo-tls  # The name of the secret where TLS certificate will be stored
   rules:
   - http:
       paths:
@@ -18,4 +24,4 @@ spec:
             name: java-demo
             port:
               number: 80
-    host: java-demo.local
+    host: java-demo.devops.com
