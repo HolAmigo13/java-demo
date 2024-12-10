@@ -17,5 +17,5 @@ spec:
           service:
             name: java-demo
             port:
-              name: 80
+              number: 80
     host: java-demo.local
