@@ -12,7 +12,7 @@ spec:
   - http:
       paths:
       - pathType: Prefix
-        path: /java-demo
+        path: /
         backend:
           service:
             name: java-demo
