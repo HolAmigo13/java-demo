@@ -6,7 +6,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: "nginx"
     kubernetes.io/tls-acme: "true"
-    cert-manager.io/cluster-issuer: "encrypt-prod"  # Specifies the ClusterIssuer to use for TLS certificates
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"  # Specifies the ClusterIssuer to use for TLS certificates
     nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
 spec:
