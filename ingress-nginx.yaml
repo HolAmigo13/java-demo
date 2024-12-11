@@ -8,6 +8,10 @@ metadata:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
 spec:
+  tls:
+  - hosts:
+    - java-demo.devops.com
+    secretName: java-demo-tls
   rules:
   - http:
       paths:
