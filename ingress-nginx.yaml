@@ -11,7 +11,7 @@ spec:
   tls:
   - hosts:
     - java-demo.devops.com
-    secretName: java-demo-tls
+    secretName: java-demo-tls-secret
   rules:
   - http:
       paths:
