@@ -5,13 +5,13 @@ metadata:
   namespace: java-demo
   annotations:
     kubernetes.io/ingress.class: "nginx"
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    #nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
 spec:
   tls:
   - hosts:
     - java-demo.devops.com
-    secretName: java-demo-tls
+    secretName: java-demo-local-tls
   rules:
   - http:
       paths:
