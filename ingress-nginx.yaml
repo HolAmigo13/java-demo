@@ -22,4 +22,4 @@ spec:
             name: java-demo
             port:
               number: 80
-    host: java-demo.devops.com
+    host: java-demo.local
