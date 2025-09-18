@@ -10,7 +10,7 @@ metadata:
 spec:
   tls:
   - hosts:
-    - java-demo.devops.com
+    - java-demo.local
     secretName: java-demo-local-tls
   rules:
   - http:
