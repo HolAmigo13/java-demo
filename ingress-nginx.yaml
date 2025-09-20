@@ -12,7 +12,7 @@ spec:
   tls:
   - hosts:
     - java-demo.local
-    secretName: java-demo-local-tls
+    secretName: java-demo-tls
   rules:
   - http:
       paths:
