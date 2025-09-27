@@ -10,6 +10,10 @@ spec:
   hostnames:
     - "java-demo.local"
   rules:
-    - backendRefs:
+    - matches:
+        - path:
+            type: PathPrefix
+            value: "/"
+      backendRefs:
         - name: java-demo
           port: 80
