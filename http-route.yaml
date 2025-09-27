@@ -18,3 +18,4 @@ spec:
         - name: java-demo
           namespace: java-demo    # <--- add this
           port: 80
+          kind: Service
