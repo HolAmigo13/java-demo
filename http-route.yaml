@@ -16,4 +16,5 @@ spec:
             value: "/"
       backendRefs:
         - name: java-demo
+          namespace: java-demo    # <--- add this
           port: 80
